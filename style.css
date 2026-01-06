@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background: #0a7aea;
@@ -43,8 +44,9 @@ input {
 }
 
 button {
-  padding: 6px 10px;
+  padding: 8px 10px;
   margin-top: 5px;
+  margin-left: 20px;
   cursor: pointer;
   background: #0a7aea;
   color: white;
