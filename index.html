@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Productivity Dashboard</h1>
+
+    <div class="dashboard">
+
+        
+        <div class="widget">
+            <h2>Clock</h2>
+            <div id="clock" class="big-text">00:00:00</div>
+        </div>
+
+        
+        <div class="widget">
+            <h2>Notes</h2>
+            <textarea id="notes" placeholder="Write your notes..."></textarea>
+            <button onclick="saveNotes()">Save Notes</button>
+        </div>
+
+        
+        <div class="widget">
+            <h2>Tasks</h2>
+            <input type="text" id="taskInput" placeholder="New task">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+
+       
+        <div class="widget">
+            <h2>Timer</h2>
+            <div id="timer" class="big-text">00:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
