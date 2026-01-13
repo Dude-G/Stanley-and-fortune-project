@@ -11,7 +11,7 @@ updateClock();
 // The Notes
 const notesArea = document.getElementById("notes");
 
-//Load the notes
+
 notesArea.value = localStorage.getItem("notes") || "";
 
 function saveNotes() {
@@ -30,7 +30,7 @@ function addTask() {
   const li = document.createElement("li");
   li.textContent = taskText;
 
-  // Click task to delete it if u want
+
   li.onclick = () => li.remove();
 
   document.getElementById("taskList").appendChild(li);
