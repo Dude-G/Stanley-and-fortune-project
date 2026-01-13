@@ -1,4 +1,4 @@
-// clock
+//The clock
 function updateClock() {
   const now = new Date();
   const time = now.toLocaleTimeString();
@@ -8,10 +8,10 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
-//notes
+// The Notes
 const notesArea = document.getElementById("notes");
 
-//Load notes
+//Load the notes
 notesArea.value = localStorage.getItem("notes") || "";
 
 function saveNotes() {
@@ -20,7 +20,7 @@ function saveNotes() {
 }
 
 
-//Task
+// The Task
 function addTask() {
   const input = document.getElementById("taskInput");
   const taskText = input.value.trim();
@@ -30,7 +30,7 @@ function addTask() {
   const li = document.createElement("li");
   li.textContent = taskText;
 
-  // Click task to delete it
+  // Click task to delete it if u want
   li.onclick = () => li.remove();
 
   document.getElementById("taskList").appendChild(li);
@@ -38,7 +38,7 @@ function addTask() {
 }
 
 
-//Timer
+//The Timer
 let seconds = 0;
 let timerInterval = null;
 
